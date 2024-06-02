@@ -41,6 +41,9 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+body .card .current-song #timeline:hover .hover-playhead {opacity: 1;}
+body .card .current-song #timeline:hover .hover-playhead::before {opacity: 1;}
+body .card .current-song #timeline:hover .hover-playhead::after {opacity: 1;}
 .current-song #timeline #playhead {
   position: relative;
   z-index: 2;
