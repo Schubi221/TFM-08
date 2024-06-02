@@ -4,50 +4,35 @@ body {
   align-items: center;
   flex-direction: column;
 }
-body .card {
+.card {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 500px;
   border-radius: 20px;
   color: #fff;
   font-weight: 100;
   background: #700;
   overflow: hidden;
 }
-body .card .current-song {
+.current-song {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   border-radius: 20px;
+  padding: 20px 0px;
   color: #fff;
   background: #080808;
 }
-body .card .current-song audio {
-  display: none;
-}
-body .card .current-song .img-wrap {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 20px;
-}
-body .card .current-song .img-wrap img {
-  width: 100%;
-  height: auto;
-}
-body .card .current-song .song-autor {
-  color: #a66;
-}
-body .card .current-song .time {
+.current-song audio {display: none;}
+.current-song .song-autor {color: #a66;}
+.current-song .time {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
   width: 240px;
 }
-body .card .current-song #timeline {
+.current-song #timeline {
   position: relative;
   margin: 0 auto;
   width: 240px;
@@ -56,16 +41,7 @@ body .card .current-song #timeline {
   border-radius: 5px;
   cursor: pointer;
 }
-body .card .current-song #timeline:hover .hover-playhead {
-  opacity: 1;
-}
-body .card .current-song #timeline:hover .hover-playhead::before {
-  opacity: 1;
-}
-body .card .current-song #timeline:hover .hover-playhead::after {
-  opacity: 1;
-}
-body .card .current-song #timeline #playhead {
+.current-song #timeline #playhead {
   position: relative;
   z-index: 2;
   width: 0;
@@ -73,7 +49,7 @@ body .card .current-song #timeline #playhead {
   border-radius: 5px;
   background: #700;
 }
-body .card .current-song #timeline .hover-playhead {
+.current-song #timeline .hover-playhead {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -84,7 +60,7 @@ body .card .current-song #timeline .hover-playhead {
   background: #700;
   transition: opacity 0.3s;
 }
-body .card .current-song #timeline .hover-playhead::before {
+.current-song #timeline .hover-playhead::before {
   opacity: 0;
   content: attr(data-content);
   display: block;
@@ -98,7 +74,7 @@ body .card .current-song #timeline .hover-playhead::before {
   background: #700;
   border-radius: calc( 20px - 12px);
 }
-body .card .current-song #timeline .hover-playhead::after {
+.current-song #timeline .hover-playhead::after {
   opacity: 0;
   content: "";
   display: block;
@@ -109,7 +85,7 @@ body .card .current-song #timeline .hover-playhead::after {
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
 }
-body .card .current-song .controls button {
+.current-song .controls button {
   color: #fff;
   border-radius: 50%;
   margin: 15px;
@@ -120,30 +96,28 @@ body .card .current-song .controls button {
   border: none;
   background: 0;
 }
-body .card .current-song .controls button.play {
+.current-song .controls button.play {
   width: 50px;
   height: 50px;
   background: #700;
 }
-body .card .current-song .controls button.play:hover {
+.current-song .controls button.play:hover {
   left: 0;
   filter: drop-shadow(0px 0px 10px #f00);
 }
-body .card .current-song .controls button.prev-next {
+.current-song .controls button.prev-next {
   width: 35px;
   height: 35px;
 }
-body .card .current-song .controls button.prev-next:hover {
-  transform: scale(1.5);
-}
-body .card .play-list {
+.current-song .controls button.prev-next:hover {transform: scale(1.5);}
+.play-list {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  height: 415px;
+  height: 560px;
   overflow-y: scroll;
 }
-body .card .play-list .track {
+.play-list .track {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
@@ -152,51 +126,45 @@ body .card .play-list .track {
   transition: 0.3s;
   cursor: pointer;
 }
-body .card .play-list .track:hover {
+.play-list .track:hover {
   background: #700;
   border-color: #a66;
   position: relative;
 }
-body .card .play-list .track.current-audio, body .card .play-list .track.play-now {
+.play-list .track.current-audio, .play-list .track.play-now {
   background: #922;
   box-shadow: 0px 0px 15px 0px #700;
 }
-body .card .play-list .track .track-img {
-  filter: opacity(70%);
-}
-body .card .play-list .track-img {
+.play-list .track .track-img {filter: opacity(70%);}
+.play-list .track-img {
   width: 60px;
   border-radius: calc( 20px - 10px);
 }
-body .card .play-list .track-discr {
+.play-list .track-discr {
   margin-left: 15px;
   display: flex;
   flex-direction: column;
   min-width: 190px;
 }
-body .card .play-list .track-discr .track-name {
+.play-list .track-discr .track-name {
   font-size: 17px;
   margin-top: 8px;
 }
-body .card .play-list .track-discr .track-author {
+.play-list .track-discr .track-author {
   margin-top: 8px;
   font-weight: 300;
   color: #a66;
 }
-body .card .play-list .track-duration {
+.play-list .track-duration {
   min-width: 40px;
   margin-left: 10px;
   margin-right: 10px;
   font-weight: 500;
 }
-.play-list::-webkit-scrollbar {
-  width: 5px;
-}
+.play-list::-webkit-scrollbar {width: 5px;}
 .play-list::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: 5px;
 }
-.play-list::-webkit-scrollbar-track {
-  background: #700;
-}
+.play-list::-webkit-scrollbar-track {background: #700;}
 ::selection {user-select:none;}

@@ -192,9 +192,6 @@ class CardProfile extends React.Component {constructor(...args) {super(...args);
       React.createElement("audio", { ref: ref => this.playerRef = ref }, /*#__PURE__*/
       React.createElement("source", { src: currentSong.audio, type: "audio/ogg" }), "Your browser does not support the audio element."), /*#__PURE__*/
 
-      React.createElement("div", { className: "img-wrap" }, /*#__PURE__*/
-      React.createElement("img", { src: currentSong.img })), /*#__PURE__*/
-
       React.createElement("span", { className: "song-name" }, currentSong.name), /*#__PURE__*/
       React.createElement("span", { className: "song-autor" }, currentSong.author), /*#__PURE__*/
 
