@@ -140,7 +140,7 @@ body .card .play-list {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  height: 300px;
+  height: 415px;
   overflow-y: scroll;
 }
 body .card .play-list .track {
@@ -189,34 +189,14 @@ body .card .play-list .track-duration {
   margin-right: 10px;
   font-weight: 500;
 }
-
 .play-list::-webkit-scrollbar {
   width: 5px;
 }
-
 .play-list::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: 5px;
 }
-
 .play-list::-webkit-scrollbar-track {
   background: #700;
 }
-
-@-webkit-keyframes play {
-  0%, 90% {
-    filter: brightness(100%);
-  }
-  50% {
-    filter: brightness(175%);
-  }
-}
-
-@keyframes play {
-  0%, 90% {
-    filter: brightness(100%);
-  }
-  50% {
-    filter: brightness(175%);
-  }
-}
+::selection {user-select:none;}
