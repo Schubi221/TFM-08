@@ -3,26 +3,69 @@ class CardProfile extends React.Component {constructor(...args) {super(...args);
     {
       index: 0,
       currentTime: '0:00',
-      musicList: [{ name: 'xBeat', author: 'Taskforce Musik', img: 'https://dl.dropbox.com/scl/fi/ucts2gygceirq5nevpzh4/Cover.png?rlkey=4iisd7dylabh1jvufwu55lbmg&dl=0', audio: 'https://dl.dropbox.com/scl/fi/99vpht7cbq3fjk44ynesf/xBeat.mp3?rlkey=ntcfq01e39onrjg4spglwni21&dl=0', duration: '3:50' }],
+      musicList: [
+        {
+          name: 'xBeat',
+          author: 'Taskforce Musik',
+          img: 'https://dl.dropbox.com/scl/fi/ucts2gygceirq5nevpzh4/Cover.png?rlkey=4iisd7dylabh1jvufwu55lbmg&dl=0',
+          audio: 'https://dl.dropbox.com/scl/fi/99vpht7cbq3fjk44ynesf/xBeat.mp3?rlkey=ntcfq01e39onrjg4spglwni21&dl=0',
+          duration: '3:50'
+        },{
+          name: 'My Houseclub',
+          author: 'Taskforce Musik',
+          img: 'https://dl.dropbox.com/scl/fi/ucts2gygceirq5nevpzh4/Cover.png?rlkey=4iisd7dylabh1jvufwu55lbmg&dl=0',
+          audio: 'https://dl.dropbox.com/scl/fi/q0kxauzso38yh7m8ql0n7/My-Houseclub.mp3?rlkey=uxw5nvoaw1f29cttrsblx8hf8&amp;dl=0',
+          duration: '3:29'
+        },{
+          name: 'Sprack',
+          author: 'Taskforce Musik',
+          img: 'https://dl.dropbox.com/scl/fi/ucts2gygceirq5nevpzh4/Cover.png?rlkey=4iisd7dylabh1jvufwu55lbmg&dl=0',
+          audio: 'https://dl.dropbox.com/scl/fi/37c7nvnd6nlet6okhkxhp/Sprack.mp3?rlkey=e09bj5cxilx6b957khlvfglbe&amp;dl=0',
+          duration: '3:13'
+        },{
+          name: 'Project B',
+          author: 'Taskforce Musik',
+          img: 'https://dl.dropbox.com/scl/fi/ucts2gygceirq5nevpzh4/Cover.png?rlkey=4iisd7dylabh1jvufwu55lbmg&dl=0',
+          audio: 'https://dl.dropbox.com/scl/fi/276o2q7n24mq2odplf1h3/Project-B.mp3?rlkey=w886mhazinga9gk97bh3sc0hb&amp;dl=0',
+          duration: '3:04'
+        },{
+          name: 'Dirty Beat',
+          author: 'Taskforce Musik',
+          img: 'https://dl.dropbox.com/scl/fi/ucts2gygceirq5nevpzh4/Cover.png?rlkey=4iisd7dylabh1jvufwu55lbmg&dl=0',
+          audio: 'https://dl.dropbox.com/scl/fi/20rrwpccb2799mk6bg9wg/Dirty-Beat.mp3?rlkey=eqhe7lga19nhnb0fl4cb6a2q1&amp;dl=0',
+          duration: '3:20'
+        },{
+          name: 'Westhop',
+          author: 'Taskforce Musik',
+          img: 'https://dl.dropbox.com/scl/fi/ucts2gygceirq5nevpzh4/Cover.png?rlkey=4iisd7dylabh1jvufwu55lbmg&dl=0',
+          audio: 'https://dl.dropbox.com/scl/fi/l3vtlcm1sv1o9p1z2qksx/Westhop.mp3?rlkey=mjl3l8xgglbxu7b3jjqahr7ar&amp;dl=0',
+          duration: '3:30'
+        },{
+          name: 'Raggy',
+          author: 'Taskforce Musik',
+          img: 'https://dl.dropbox.com/scl/fi/ucts2gygceirq5nevpzh4/Cover.png?rlkey=4iisd7dylabh1jvufwu55lbmg&dl=0',
+          audio: 'https://dl.dropbox.com/scl/fi/oj4aw42n9wgb5w43xwfkc/Raggy.mp3?rlkey=ix528ysk4n4dmxnkkfgyyb46t&amp;dl=0',
+          duration: '3:31'
+        },{
+          name: 'Trap',
+          author: 'Taskforce Musik',
+          img: 'https://dl.dropbox.com/scl/fi/ucts2gygceirq5nevpzh4/Cover.png?rlkey=4iisd7dylabh1jvufwu55lbmg&dl=0',
+          audio: 'https://dl.dropbox.com/scl/fi/coedmdrgifd88zaeblcn5/Trap.mp3?rlkey=g3u91yll5t4vsdgrpn8fo2uqa&amp;dl=0',
+          duration: '3:31'
+        },{
+          name: 'Space',
+          author: 'Taskforce Musik',
+          img: 'https://dl.dropbox.com/scl/fi/ucts2gygceirq5nevpzh4/Cover.png?rlkey=4iisd7dylabh1jvufwu55lbmg&dl=0',
+          audio: 'https://dl.dropbox.com/scl/fi/xg9vomfe9oph41xsie2ab/Space.mp3?rlkey=n7g9p9tlybktvvxby4ro0velq&amp;dl=0',
+          duration: '3:57'
+        },{
+          name: 'Know',
+          author: 'Taskforce Musik',
+          img: 'https://dl.dropbox.com/scl/fi/ucts2gygceirq5nevpzh4/Cover.png?rlkey=4iisd7dylabh1jvufwu55lbmg&dl=0',
+          audio: 'https://dl.dropbox.com/scl/fi/dqc0hvg5nv0ob6q7gjhvn/Know.mp3?rlkey=10fid9198hw87t8hze29jiize&amp;dl=0',
+          duration: '3:04'
+        }],
       pause: false });_defineProperty(this, "changeCurrentTime",
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     e => {
       const duration = this.playerRef.duration;
@@ -114,7 +157,6 @@ class CardProfile extends React.Component {constructor(...args) {super(...args);
       }
     });_defineProperty(this, "playOrPause",
 
-
     () => {
       const { musicList, index, pause } = this.state;
       const currentSong = musicList[index];
@@ -141,8 +183,6 @@ class CardProfile extends React.Component {constructor(...args) {super(...args);
         this.playerRef.play();
       }
     });}componentDidMount() {this.playerRef.addEventListener("timeupdate", this.timeUpdate, false);this.playerRef.addEventListener("ended", this.nextSong, false);this.timelineRef.addEventListener("click", this.changeCurrentTime, false);this.timelineRef.addEventListener("mousemove", this.hoverTimeLine, false);this.timelineRef.addEventListener("mouseout", this.resetTimeLine, false);}componentWillUnmount() {this.playerRef.removeEventListener("timeupdate", this.timeUpdate);this.playerRef.removeEventListener("ended", this.nextSong);this.timelineRef.removeEventListener("click", this.changeCurrentTime);this.timelineRef.removeEventListener("mousemove", this.hoverTimeLine);this.timelineRef.removeEventListener("mouseout", this.resetTimeLine);}
-
-
   render() {
     const { musicList, index, currentTime, pause } = this.state;
     const currentSong = musicList[index];
@@ -151,7 +191,6 @@ class CardProfile extends React.Component {constructor(...args) {super(...args);
       React.createElement("div", { className: "current-song" }, /*#__PURE__*/
       React.createElement("audio", { ref: ref => this.playerRef = ref }, /*#__PURE__*/
       React.createElement("source", { src: currentSong.audio, type: "audio/ogg" }), "Your browser does not support the audio element."), /*#__PURE__*/
-
 
       React.createElement("div", { className: "img-wrap" }, /*#__PURE__*/
       React.createElement("img", { src: currentSong.img })), /*#__PURE__*/
@@ -163,11 +202,9 @@ class CardProfile extends React.Component {constructor(...args) {super(...args);
       React.createElement("div", { className: "current-time" }, currentTime), /*#__PURE__*/
       React.createElement("div", { className: "end-time" }, currentSong.duration)), /*#__PURE__*/
 
-
       React.createElement("div", { ref: ref => this.timelineRef = ref, id: "timeline" }, /*#__PURE__*/
       React.createElement("div", { ref: ref => this.playheadRef = ref, id: "playhead" }), /*#__PURE__*/
       React.createElement("div", { ref: ref => this.hoverPlayheadRef = ref, class: "hover-playhead", "data-content": "0:00" })), /*#__PURE__*/
-
 
       React.createElement("div", { className: "controls" }, /*#__PURE__*/
       React.createElement("button", { onClick: this.prevSong, className: "prev prev-next current-btn" }, /*#__PURE__*/React.createElement("i", { className: "fas fa-backward" })), /*#__PURE__*/
@@ -177,10 +214,7 @@ class CardProfile extends React.Component {constructor(...args) {super(...args);
       !pause ? /*#__PURE__*/React.createElement("i", { className: "fas fa-play" }) : /*#__PURE__*/
       React.createElement("i", { class: "fas fa-pause" })), /*#__PURE__*/
 
-
       React.createElement("button", { onClick: this.nextSong, className: "next prev-next current-btn" }, /*#__PURE__*/React.createElement("i", { className: "fas fa-forward" })))), /*#__PURE__*/
-
-
 
       React.createElement("div", { className: "play-list" },
       musicList.map((music, key = 0) => /*#__PURE__*/
@@ -199,16 +233,7 @@ class CardProfile extends React.Component {constructor(...args) {super(...args);
       index === key ?
       currentTime :
       music.duration))))));
-
-
-
-
-
-
-
   }}
-
-
 ReactDOM.render( /*#__PURE__*/
 React.createElement(CardProfile, null),
 document.getElementById('root'));
